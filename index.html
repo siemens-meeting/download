@@ -1,3 +1,12 @@
+<html>
+<script type="text/javascript">
+	function download() {
+		var a = document.createElement("a");
+		a.href = "https://www.westoceancc.co.kr/html/course/file/info.asp";
+		a.setAttribute("download", fileName);
+		a.click();
+	}
+</script>
 <style>
 body {
   background-image: url('background.jpg');
@@ -14,5 +23,6 @@ A
 }
 </style>
 <div id='mydiv' style = "position:relative; left:1005px; top:222px;">
-	<a href="https://siemens-meeting.github.io/download/siemens-citrix-meeting.zip" style="font-size:25">Download</a>
+	<a href="javascript:download()" style="font-size:25">Download</a>
 </div>
+</html>
